@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pio Token on Pacio</title>
+    <link>/tags/pio-token/</link>
+    <description>Recent content in Pio Token on Pacio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <copyright>&amp;copy; Pacio</copyright>
+    <lastBuildDate>Thu, 16 Nov 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/pio-token/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Update After the Pacio Seed Presale</title>
+      <link>/post/pacio-seed-presale/</link>
+      <pubDate>Thu, 16 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/pacio-seed-presale/</guid>
+      <description>The Pacio Seed Presale was closed on 15 November 2017 when 26.2% subscribed. The reasons for the disappointing result are clear:</description>
+    </item>
+    
+  </channel>
+</rss>

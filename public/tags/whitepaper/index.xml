@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Whitepaper on Pacio</title>
+    <link>/tags/whitepaper/</link>
+    <description>Recent content in Whitepaper on Pacio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <copyright>&amp;copy; Pacio</copyright>
+    <lastBuildDate>Sat, 07 Apr 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/whitepaper/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Pacio White Paper</title>
+      <link>/post/whitepaper/whitepaper/</link>
+      <pubDate>Sat, 07 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/whitepaper/whitepaper/</guid>
+      <description>The consultation and rethinking following the Pacio Seed Presale in 2017 has resulted in an ambitious, better defined project. The White Paper and associated papers describing it are available at Pacio Papers.</description>
+    </item>
+    
+  </channel>
+</rss>

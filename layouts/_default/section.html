@@ -1,0 +1,35 @@
+{{ define "main" }}
+{{- if $.Site.Params.debug }}<p class="has-text-danger">DEBUG: layouts/_default/section.html</p>{{ end -}}
+	<!-- Hero caption -->
+	<div class="heading-team">
+		<h2>
+		  {{ .Title }}
+		</h2>
+	</div>
+
+
+<section class="section">
+	<div class="container">
+		<article class="content">
+			<!-- find code to range images or creat partial, chech metadata on posts -->
+			
+			  
+<article class="thumb">
+    <div class="imgthumb">
+    {{ if .Resources.GetMatch "thumbnail" }}
+        {{ $thumbnail := .Resources.GetMatch "thumbnail" }}
+        {{ $scaled := $thumbnail.Fill "300x300 Gaussian" }}
+        <a href="{{ .URL }}"><img src="{{ $scaled.Permalink }}" width="150"/></a>
+    
+    </div>
+</article>
+{{- end -}}
+		<h3>{{ .Title }}section-default</h3>
+		{{ range .Paginator.Pages }}
+		{{ .Render "summary" }}
+		{{ end }}
+		</article>
+		{{ partial "pagination.html" . }}
+	</div>
+</section>
+{{ end }}

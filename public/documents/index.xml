@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Overview on Pacio</title>
+    <link>/documents/</link>
+    <description>Recent content in Overview on Pacio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <copyright>&amp;copy; Pacio</copyright>
+    <lastBuildDate>Mon, 09 Apr 2018 02:16:58 -0800</lastBuildDate>
+    
+	<atom:link href="/documents/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Technology</title>
+      <link>/documents/technology/</link>
+      <pubDate>Mon, 09 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/documents/technology/</guid>
+      <description>1 Technology There are six key aspects to the Pacio Technology: • Pacio Blockchain • Pacio Database • Core Technologies • Application Programming Interface (API) to make everything available to apps • Application Support Tools • The Pacio Architecture</description>
+    </item>
+    
+    <item>
+      <title>Vision</title>
+      <link>/documents/vision/</link>
+      <pubDate>Mon, 09 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/documents/vision/</guid>
+      <description>Introduction Pacio was conceived to help address the shortfall in achievement of the internet’s promise to provide knowledge, choices, opportunities, and prosperity inclusively and equitably.</description>
+    </item>
+    
+  </channel>
+</rss>

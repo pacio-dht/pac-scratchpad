@@ -1,0 +1,117 @@
+
+baseURL: "/"
+languageCode: "en-gb"
+title: "Pacio"
+
+
+# copyright appears in the default site footer 
+copyright: "&copy; Pacio"
+
+# metaDataFormat for new content pages generated with the `hugo new` command if
+# not otherwise specified by an archetype. Hugo-Smorg theme examples all use
+# the easy to understand and write YAML format.
+metaDataFormat: yaml
+
+# summaryLength limits the number of words included in auto-generated page
+# summaries Manual control of summaries is possible using the <!--more-->
+# directive in content files. https://gohugo.io/content-management/summaries/
+summaryLength: 20
+
+# paginate sets the maximum number of items (pages) in a page listing.
+paginate: 2  # set very low for demo purposes only, 5 - 10 or more would be reasonable 
+
+# GoogleAnalytics offers deep insight into how visitors use your site. It's
+# optional, and free: https://www.google.com/analytics/analytics/
+# Only uncomment if you have a GA UD:
+# GoogleAnalytics: # add your UA-nnn-nnnnnnnn ID and uncomment
+
+# Disqus is a popular commenting system; to get an account visit:
+# https://disqus.com/admin/create/`
+# Uncommenting will result in Disqus capability extended to each blog post.
+# disqusShortname: "yourdiscussshortname"
+
+# Code oriented optional features:
+# pygments variables tune code syntax highlighting features Hugo provides
+pygmentsUseClasses: true
+pygmentsCodefencesGuessSyntax: true
+pygmentsCodefences: true
+
+# enableGitInfo populates a .GitInfo object for each git-managed page 
+# The site does not currently make use of the information.
+enableGitInfo: false
+
+# enableRobotsTXT: <false> enables generation of site robots.txt from
+# front-matter directives. Many sites may prefer to create a robots.txt file in
+# the site content directory.
+enableRobotsTXT: false
+
+# enableEmoji: <false> enables Emoji rendering see:
+# https://www.webpagefx.com/tools/emoji-cheat-sheet/
+enableEmoji: false
+
+
+# Optional Features ------------------------------------------------------
+
+# $.Site.Params variables are user-definable; the Site makes use of
+# a number of variables to enable a certain amount of customization without
+# requiring editing of templates. See `docs` for more
+# information.
+
+# Access in templates via $.Site.Params.somevariablename 
+params: 
+    # debug: true causes template path to be output at top of page, handy for dev
+    debug: false 
+
+    # only_feed_summaries: Include only Page summaries in Atom and RSS feeds. 
+    only_feed_summaries: true
+
+    # fullname: Used in head and footer partials; Atom and RSS generation.
+    # JSON-LD microdata for search engines
+    fullname: "Crystal View"
+
+    # Description: Used per fullname.
+    description: "distributed economic platform protocol whithin an embedded accounting and business data enviroment."
+
+    # Customize logo or wordmark here; Provided via partials/logo.html. DISABLED
+    # used in default navigation and footer.
+    logotype: '<span class="has-text-weight-bold">Pacio-<span class="has-text-danger">Semantic API</span></span>' 
+    footer: 'Pacio Semantic Blockchain API <a href="https://pacio.io/">homepage</a>'
+    subfooter: '<i class="fab fa-github"></i> <a href="https://github.com/Pacio-io">github.com/Pacio.io</a>'
+
+    # Optional information used in RSS, Atom and JSON-LD microdata. See Schema.org.
+    publisher:
+        # Type must be either "Organization" or "Person"
+        type: Organization
+        name: Pacio
+        logo: url to logo image
+
+
+# Primary Navigation Menu (partials/nav.html) ----------------------------
+
+# The site menu exploses nav.html - main navbar top
+# NOTE: Don't put leading "/" in the url parameter
+# path-- url: "blog/"
+menu:
+    mainnav:
+        - name: "Main"
+          url: "/"
+          identifier: "main"
+          weight: 10
+
+        - name: "Vision"
+          url: "#"
+          identifier: "vision"
+          weight: 20
+
+        - name: "Docs"
+          url: "#"
+          identifier: "docs"
+          weight: 30
+
+        - name: "Blog"
+          url: "#"
+          identifier: "blog"
+          weight: 40
+
+      
+

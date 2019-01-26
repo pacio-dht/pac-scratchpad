@@ -1,0 +1,40 @@
+{{/* via
+
+    https://nilsnh.no/2018/06/10/hugo-how-to-add-support-for-responsive-images-trough-image-processing-and-page-bundles-3/
+    
+    */}}
+    {{- $description := .Scratch.Get "description" -}}
+    {{- $imageName := .Scratch.Get "image" -}}
+    {{- $link := .Scratch.Get "link" -}}
+    {{- $linkText := .Scratch.Get "link-text" -}}
+    
+    {{- $originalImage := .Page.Resources.GetMatch $imageName -}}
+    
+    {{- if $originalImage -}}
+      {{- $geometry := .Site.Params.images.content.geometry -}}
+      {{- $image := $originalImage.Fit $geometry -}}
+      <figure>
+        <img srcset="
+          {{ ($originalImage.Resize "320x").RelPermalink }} 320w,
+          {{ ($originalImage.Resize "600x").RelPermalink }} 600w,
+          {{ ($originalImage.Resize "1200x").RelPermalink }} 2x"
+          src="{{ ($originalImage.Resize "600x").RelPermalink }}"
+          alt="{{ $description }}">
+        <figcaption>
+          {{ $description | markdownify }}<br>
+          {{- if $link -}}
+            <a href="{{ $link }}" target="_blank">
+              {{- if $linkText -}}
+                {{- $linkText -}}
+              {{- else -}}
+                {{- $link -}}
+              {{- end -}}
+            </a>
+          {{- else -}}
+            <a href="{{ $originalImage.RelPermalink }}" target="_blank">
+              (see original image in new window)
+            </a>
+          {{- end -}}
+        </figcaption>
+      </figure>
+    {{- end -}}

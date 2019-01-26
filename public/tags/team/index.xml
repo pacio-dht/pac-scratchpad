@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Team on Pacio</title>
+    <link>/tags/team/</link>
+    <description>Recent content in Team on Pacio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <copyright>&amp;copy; Pacio</copyright>
+    <lastBuildDate>Mon, 16 Apr 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/team/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Marcell Nimfuehr joins Pacio as CMO</title>
+      <link>/post/marcell-nimfuehr/marcell-nimfuehr-joins-pacio-as-cmo/</link>
+      <pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/marcell-nimfuehr/marcell-nimfuehr-joins-pacio-as-cmo/</guid>
+      <description>Marcell Nimfuehr has joined Pacio as CMO (Chief Marketing Officer), effective immediately. Like Fransisca earlier in April, Marcell is a significant addition to the Pacio team.</description>
+    </item>
+    
+    <item>
+      <title>Francisca Vaessen</title>
+      <link>/post/francisca-vaessen/</link>
+      <pubDate>Mon, 09 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/francisca-vaessen/</guid>
+      <description>I am delighted to announce that Francisca has joined Pacio as our Internationalisation Coordinator.
+Fransisca is an international person, with European and African heritage, who lives and was educated in Holland, which has long been a country of internationalists.</description>
+    </item>
+    
+  </channel>
+</rss>

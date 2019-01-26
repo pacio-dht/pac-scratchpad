@@ -1,0 +1,211 @@
+{{ define "main" }}
+<!-- 
+	Can be expanded later to inluce detailed member pages as a section.
+	use for a section like About that has just a few anicillary pages:
+	/about/_index.md
+	/about/contact.md
+	/about/faq.md
+
+	In front-matter of each page including _index.md include:
+
+	layout: subsection.html
+
+
+-->
+{{- if $.Site.Params.debug }}
+<p class="has-text-danger">DEBUG: layouts/_default/team.html</p>{{ end -}}
+	<!-- Hero caption -->
+	<div class="heading-whitepaper">
+		<h1 class="heading-text">
+		<span class="heading-wp--sub">{{ .Params.subtitle }}</span>
+		</h1>
+		</div>
+<!-- /Main Content Layout-->
+<!-- /Main Content Heading -->
+<section class="section-data">
+	<div class="u-center-text mb-80 mt-80">
+		<h2 class="heading-secondary">
+			Team 
+		</h2>
+	</div>
+</section>
+
+  <!-- Data Section -->
+<section id="data" class="section mb-80">
+<div class="container">
+  <div class="story">
+	  <img src="../images/pacio-semantic-web-business-data-block-01.png" alt="">
+	<div>
+	  <h2>Benefits of decentralised</h2>
+	  <p>The Pacio Core and Foundation team will grow as presale and full ICO funding becomes available, in order to fully implement
+		the Vision, to include:</p>
+	<ul>
+		<li>CEO</li>
+		<li>CTO</li>
+		<li>CFO</li>
+		<li>Developers – up to 30</li>
+		<li>Marketing</li>
+		<li>Educators</li>
+		<li>Creative designers</li>
+		<li>Accountants</li>
+		<li>Administrators</li>
+	</ul>
+	</div>
+  </div>
+</div>
+</section>
+		<div class="container">
+			
+					<div class="content">
+						<p>The Pacio Core and Foundation team will grow as presale and full ICO funding becomes available, in order to fully implement
+							the Vision, to include:</p>
+						<ul>
+							<li>CEO</li>
+							<li>CTO</li>
+							<li>CFO</li>
+							<li>Developers – up to 30</li>
+							<li>Marketing</li>
+							<li>Educators</li>
+							<li>Creative designers</li>
+							<li>Accountants</li>
+							<li>Administrators</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		</section>
+		<!-- /Main Content Heading Ends-->
+
+		<!-- /Profile Cards-->
+		<section class="section">
+			<div class="container">
+				<div class="columns">
+					<div class="column">
+						<div class="card" id="profile-card">
+							<div class="card-content">
+								<div class="media">
+									<div class="media-left">
+										<figure class="image is-96x96">
+											<img src="/assets/images/profiles/davidjohnhartley.jpg">
+										</figure>
+									</div>
+									<div class="media-content pt-20">
+										<h3>David Hartley</h3>
+									</div>
+								</div>
+								<div class="content">
+									David’s experience has encompassed civil engineering, software
+									<a href="#">more</a>
+								</div>
+								<footer class="card-footer">
+									<p class="card-footer-item">
+										<span>
+											<a href="#" i class="fa fa-globe">
+												</i>
+											</a>
+										</span>
+									</p>
+									<p class="card-footer-item">
+										<span>
+											<a href="http://www.davidjohnhartley.com/" i class="fab fa-github">
+												</i>
+											</a>
+										</span>
+									</p>
+									<p class="card-footer-item">
+										<span>
+											<a href="http://www.davidjohnhartley.com/" i class="fab fa-linkedin">
+												</i>
+											</a>
+										</span>
+									</p>
+									<p class="card-footer-item">
+										<span>
+											<a href="http://www.davidjohnhartley.com/" i class="fab fa-facebook">
+												</i>
+											</a>
+										</span>
+									</p>
+								</footer>
+							</div>
+						</div>
+					</div>
+					<div class="column">
+						<div class="card" id="profile-card">
+							<div class="card-content">
+								<div class="media">
+									<div class="media-left">
+										<figure class="image is-96x96">
+											<img src="/assets/images/profiles/keithcleland.jpg">
+										</figure>
+									</div>
+									<div class="media-content pt-20">
+										<h3>Dr Keith N. Cleland</h3>
+									</div>
+								</div>
+								<div class="content">
+									Currently Professor and Head, Financial Management Department
+									<a href="#">more</a>
+								</div>
+								<footer class="card-footer">
+									<p class="card-footer-item">
+										<span>
+											<a href="#" i class="fa fa-globe">
+												</i>
+											</a>
+										</span>
+									</p>
+									<p class="card-footer-item">
+										<span>
+											<a href="http://www.davidjohnhartley.com/" i class="fab fa-linkedin">
+												</i>
+											</a>
+										</span>
+									</p>
+								</footer>
+							</div>
+						</div>
+					</div>
+
+					<div class="column">
+						<div class="card" id="profile-card">
+							<div class="card-content">
+								<div class="media">
+									<div class="media-left">
+										<figure class="image is-96x96">
+											<img src="/assets/images/profiles/trevorwatters.jpg">
+										</figure>
+									</div>
+									<div class="media-content pt-20">
+										<h3>Trevor Watters</h3>
+									</div>
+								</div>
+								<div class="content">
+									Moved from a banking background to grow a CPA Public
+									<a href="#">more</a>
+								</div>
+								<footer class="card-footer">
+									<p class="card-footer-item">
+										<span>
+											<a href="#" i class="fa fa-globe">
+												</i>
+											</a>
+										</span>
+									</p>
+									<p class="card-footer-item">
+										<span>
+											<a href="http://www.davidjohnhartley.com/" i class="fab fa-linkedin">
+												</i>
+											</a>
+										</span>
+									</p>
+								</footer>
+							</div>
+						</div>
+					</div>
+				</div>
+		</section>
+		<!-- /Profile Cards-->
+
+		{{ end }}

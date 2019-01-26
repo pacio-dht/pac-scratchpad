@@ -1,0 +1,115 @@
+{{ define "main" }}
+<!-- use for a section like About that has just a few anicillary pages:
+	/about/_index.md
+	/about/contact.md
+	/about/faq.md
+
+	In front-matter of each page including _index.md include:
+
+	layout: subsection.html
+
+	Each will be presented as a single page with a breadcrumb menu at the top
+	allowing for navigation among related pages in the section.
+
+-->
+{{- if $.Site.Params.debug }}<p class="has-text-danger">DEBUG: layouts/_default/vision.html</p>{{ end -}}
+
+	<!-- Hero caption -->
+
+<div class="heading-whitepaper">
+	<h1 class="heading-text">
+	<span class="heading-wp--sub">{{ .Params.subtitle }}</span>
+	</h1>
+	</div>
+				
+
+	
+<!-- /Main Content Layout-->
+<main>
+	<section class="section-data">
+		<div class="u-center-text mb-80 mt-80">
+			<h2 class="heading-secondary">
+				Data Decentralisation 
+			</h2>
+		</div>
+	</section>
+  
+	  <!-- Data Section -->
+  <section id="data" class="section mb-80">
+	<div class="container">
+	  <div class="story">
+		  <img src="../images/pacio-semantic-web-business-data-block-01.png" alt="">
+		<div>
+		  <h2>Benefits of decentralised</h2>
+		  <p>
+			Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque expedita tempore quasi omnis a aut et totam illo fuga accusamus
+			dolorum vero, ut harum consectetur. Minima molestias officiis culpa non sed dicta itaque. Et aliquam illo obcaecati
+			molestias veritatis porro.
+		  </p>
+		  <p>Target from user/investor perspective</p>
+		  <hr>
+		</div>
+	  </div>
+	</div>
+  </section>
+		<!-- Pacio API Section -->
+  
+		<section class="section-data">
+			<div class="u-center-text mt-80 mb-80">
+				<h2 class="heading-secondary">
+					Pacio Semantic API 
+				</h2>
+			</div>
+		</section>
+  
+		<section id="story" class="section mb-80">
+			<div class="container">
+			  <div class="story">
+				<div>
+				  <img src="../images/pacio-semantic-web-business-data-block-01.png" alt="">
+				</div>
+				<div>
+				  <h2>Benefits of Pacio</h2>
+				  <p>
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque expedita tempore quasi omnis a aut et totam illo fuga accusamus
+					dolorum vero, ut harum consectetur. Minima molestias officiis culpa non sed dicta itaque. Et aliquam illo obcaecati
+					molestias veritatis porro.
+				  </p>
+				  <p>Target from user/investor perspective</p>
+				  <hr>
+				</div>
+			  </div>
+			</div>
+		  </section>
+				<!-- Data Section -->
+				
+		<section class="section-data">
+			<div class="u-center-text mb-80 mt-80">
+				<h2 class="heading-secondary">
+					Feelgood Summary 
+				</h2>
+			</div>
+		</section>
+  
+  <section id="story" class="section mb-80">
+	<div class="container">
+	  <div class="story">
+		<div>
+		  <img src="../images/pacio-semantic-web-business-data-block-01.png" alt="">
+		</div>
+		<div>
+		  <h2>Summarise pitch</h2>
+		  <p>
+			Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque expedita tempore quasi omnis a aut et totam illo fuga accusamus
+			dolorum vero, ut harum consectetur. Minima molestias officiis culpa non sed dicta itaque. Et aliquam illo obcaecati
+			molestias veritatis porro.
+		  </p>
+		  <p>Target from user/investor perspective</p>
+		  <hr>
+		</div>
+	  </div>
+	</div>
+  </section>
+  </main>
+
+{{ end }}

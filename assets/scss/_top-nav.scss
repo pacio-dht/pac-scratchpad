@@ -1,0 +1,42 @@
+.main-menu {
+  display: grid;
+  grid-gap: 20px;
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  background-color: var(--color-primary-light);
+  
+
+    
+}
+
+/* Navigation */
+.main-nav ul {
+    display: grid;
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: [full-start] repeat(4, 1fr);
+    
+  }
+  
+  .main-nav a {
+    background: var(--color-grey-light-1);
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    color: var(--dark);
+    text-transform: uppercase;
+    font-family: $font-primary;
+    font-size: 1.5rem;
+    box-shadow: var(--shadow-dark);
+  }
+  
+  .main-nav a:hover {
+    background: var(--secondary-color-dark);
+    color: var(--color-grey-light-1);
+  }
+  

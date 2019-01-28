@@ -1,5 +1,5 @@
 .header {
-    background-color: var(--color-accent);
+    background-color: var(--color-primary-dark);
     grid-column: full-start / col-end 6;
     background-image:  url(../img/semanticdata.svg);
     background-size: cover;
@@ -37,7 +37,7 @@
         align-items: center;
 
         font-size: 1.6rem;
-        color: $color-grey-light-2;
+        color: $color-grey-light-1;
 
         &::before,
         &::after {

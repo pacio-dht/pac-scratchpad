@@ -17,12 +17,12 @@
 	<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" 
 	      href="{{ .Permalink | safeURL }}" title="{{ $.Site.Title }}">{{ end }}
 	{{- end }}
-	<link rel="preload" href="webfonts/leaguespartan-bold.woff2" as="font" type="font/woff2" crossorigin>
-	<link rel="preload" href="webfonts/orbitron-black-webfont.woff" as="font" type="font/woff" crossorigin>
-
+	<link rel="preload" href="webfonts/noto-sans-v7-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="webfonts/good-times-rg.woff2" as="font" type="font/woff2" crossorigin>
 	{{ $styles := resources.Get "scss/main.scss" | toCSS | minify | fingerprint }}
 	<link rel="stylesheet" href="{{ $styles.Permalink }}" 
 	integrity="{{ $styles.Data.Integrity }}" media="screen">
+	
 	
 	{{ $vendor := resources.Get "js/vendor/bodymovin.js" }}
 	{{ $customjs := resources.Get "js/main.js" }}

@@ -1,5 +1,4 @@
 
-
 // BODY MOVING JS
 
 var animation = bodymovin.loadAnimation ({

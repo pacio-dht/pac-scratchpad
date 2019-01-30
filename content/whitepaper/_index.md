@@ -1,5 +1,5 @@
 ---
-title: "White Paper"
+title: "Documentation"
 subtitle: "Semantic decentralised data platform"
 description: ""
 date: 2018-04-09T02:16:58-08:00

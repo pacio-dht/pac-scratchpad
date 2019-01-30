@@ -16,3 +16,12 @@ Pariatur voluptatibus quidem consequatur harum, voluptatum mollitia quae.
 --- Stories
 
 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur distinctio necessitatibus pariatur voluptatibus. Quidem consequatur harum volupta!
+
+API,TEA,APP,Exchange,Central Bank,PIO Eonomy,User/Agent, PIO Emission,PIO, Shredder, DHT,
+
+Animations for Documentation-Pio-economy-design
+1- Figure 1: Bitcoin example - user buys BTC at exchange with US$ and spends it in an app
+1- Figure 2: Traditional economy - central banks control money supply
+1- Figure 3: PIO system adds dynamic emission into the circulation
+1- Figure 4. loan payments are destroyed and reemitted by the system
+2: Figure 5.-Transactions in data centric vs agent centric networks 

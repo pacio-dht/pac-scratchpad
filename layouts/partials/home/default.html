@@ -1,6 +1,6 @@
 <body class="container">
-    <div class="main-menu">
-    <!-- Navigation -->
+     <!--<div class="main-menu">
+     Navigation
     <nav class="main-nav">
             <ul>
              {{ range .Site.Menus.mainnav}}
@@ -8,46 +8,87 @@
              {{ end }}
             </ul>
           </nav>
-        </div>
+        </div>  -->
+
+        <div class="main-menu">
+        <nav class="navbar">
+                <a href="#" class="navbar-brand"><img src="img/pacio-logo.png" style="width: 50px; vertical-align: middle;"></a>
+            <a href="#" class="navbar-brand"><img src="img/pacio-logo-font.png" style="width: 30%; vertical-align: middle;"></a>
+         
+        <ul>
+            {{ range .Site.Menus.mainnav}}
+            <li><a href="{{ .URL }}"> {{ .Name }}</a></li>
+            {{ end }}
+           </ul>
+            <button class="navbar-toggler">
+              <span></span>
+            </button>
+          </nav> 
+          </div>
 
 <header class="header">
-    <h1 class="logofont">Pacio</h1>
+    <h1 class="logofont">Economy</h1>
     <h3 class="heading-3">distributed economic platform protocol
         with embedded accounting in a business data enviroment </h3>
     <h1 class="heading-1">Billions of transactions per second</h1>
     <button class="btn header__btn">Vision</button>
-    <div class="header__seenon-text">WATCH</div>
-    <div class="header__seenon-logos">
-        <img src="img/play-icon.png" alt="Seen on logo 1">  
-    </div>
+    
 </header>
 
 <div class="head-icons">
-    <h3 class="heading-3">API Features</h3>
+    <h3 class="heading-3">Pacio Logos</h3>
     <div class="head-icons__list">
-        <img src="img/icon1.jpg" alt="Realtor 1" class="head-icons__img">
+        <img src="img/pacio-m-logo.png" alt="Icon 1" class="head-icons__img">
         <div class="head-icons__details">
-            <h4 class="heading-4 heading-4--light">Free transfers </h4>
+            <h4 class="heading-4-icons heading-4--dark">ECONOMY </h4>
             <p class="head-icons__copy">Billions per second</p>
         </div>
 
-        <img src="img/icon2.jpg" alt="icon 2" class="head-icons__img">
+        <img src="img/pacio-logo-bright.png" alt="icon 2" class="head-icons__img">
         <div class="head-icons__details">
-            <h4 class="heading-4 heading-4--light">Unlimited scalability</h4>
+            <h4 class="heading-4-icons heading-4--dark">TEA</h4>
             <p class="head-icons__copy">Including microtransfers</p>
         </div>
 
-        <img src="img/icon3.jpg" alt="icon 3" class="head-icons__img">
+        <img src="img/pacio-ssim-logo.png" alt="icon 3" class="head-icons__img">
         <div class="head-icons__details">
-            <h4 class="heading-4 heading-4--light">Direct fiat - crypto exchange</h4>
+            <h4 class="heading-4-icons heading-4--dark">SSIM</h4>
             <p class="head-icons__copy">A zero-fee currency is beneficial to all</p>
         </div>
     </div>
 </div>
 
+<div class="story__pictures">
+        <img src="img/user.png" alt="SVG anima" class="story__img--1">
+        
+    </div>
+    
+    <div class="story__content">
+        <h3 class="heading-3 mb-sm">User Benefits Section</h3>
+        <h2 class="heading-2 heading-2--dark mb-md">A peer-to-peer money-system</h2>
+        <p class="story__text">
+            Accountable cryptocurrencies anchored to national fiat currencies with fast seamless finalities!
+        </p>
+        
+    </div>
+
+    <div class="story__pictures">
+            <img src="img/developer.png" alt="SVG anima" class="story__img--1"> 
+        </div>
+        
+        <div class="story__content">
+            <h3 class="heading-3 mb-sm">Developer Benefits Section</h3>
+            <h2 class="heading-2 heading-2--dark mb-md">A peer-to-peer money-system</h2>
+            <p class="story__text">
+                Accountable cryptocurrencies anchored to national fiat currencies with fast seamless finalities!
+            </p>  
+        </div>
+
+
+
 <section class="features">
     <div class="feature">
-        <svg class="feature__icon">
+        <svg class="feature__icon--purple">
             <use xlink:href="img/sprite.svg#icon-global"></use>
         </svg>
         <h4 class="heading-4 heading-4--dark">Unlimited scalability </h4>
@@ -55,7 +96,7 @@
     </div>
 
     <div class="feature">
-        <svg class="feature__icon">
+        <svg class="feature__icon--orange">
             <use xlink:href="img/sprite.svg#icon-trophy"></use>
         </svg>
         <h4 class="heading-4 heading-4--dark">Unlimited bandwidth</h4>
@@ -63,7 +104,7 @@
     </div>
 
     <div class="feature">
-        <svg class="feature__icon">
+        <svg class="feature__icon--green">
             <use xlink:href="img/sprite.svg#icon-map-pin"></use>
         </svg>
         <h4 class="heading-4 heading-4--dark">Zero-cost microtransfers</h4>
@@ -71,7 +112,7 @@
     </div>
 
     <div class="feature">
-        <svg class="feature__icon">
+        <svg class="feature__icon--gold">
             <use xlink:href="img/sprite.svg#icon-key"></use>
         </svg>
         <h4 class="heading-4 heading-4--dark">Triple Entry Accounting (TEA)</h4>
@@ -114,3 +155,4 @@
 
 
 {{ partial "footer.html" . }}
+

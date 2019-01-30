@@ -1,15 +1,24 @@
-<!-- <script>
-document.addEventListener('DOMContentLoaded', function () {
-  var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-  if ($navbarBurgers.length > 0) {
-    $navbarBurgers.forEach(function ($el) {
-      $el.addEventListener('click', function () {
-        var target = $el.dataset.target;
-        var $target = document.getElementById(target);
-        $el.classList.toggle('is-active');
-        $target.classList.toggle('is-active');
-      });
-    });
-  }
-});
-</script> -->
+<script>
+
+  // Navbar top
+
+const navbarToggler = document.querySelector(".navbar-toggler");
+const navbarMenu = document.querySelector(".navbar ul");
+const navbarLinks = document.querySelectorAll(".navbar a");
+
+navbarToggler.addEventListener("click", navbarTogglerClick);
+
+function navbarTogglerClick() {
+navbarToggler.classList.toggle("open-navbar-toggler");
+navbarMenu.classList.toggle("open");
+}
+
+navbarLinks.forEach(elem => elem.addEventListener("click", navbarLinkClick));
+
+function navbarLinkClick() {
+if(navbarMenu.classList.contains("open")) {
+  navbarToggler.click();
+}
+}
+
+</script>

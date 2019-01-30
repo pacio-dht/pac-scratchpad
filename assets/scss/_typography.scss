@@ -1,15 +1,18 @@
 .logofont {
-    font-family: 'Good Times Rg';
+    font-family: $color-primary;
     font-weight: 900;
     font-size: 6.5rem;
     font-style: italic;
     text-transform: uppercase;
-    color: var(--secondary-color);
+    color: var(--color-logo-text);
+    background: -webkit-linear-gradient(#172b4d, #b1005a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     
 }
 
 body {
-    font-family: 'Noto Sans'
+    font-family: 'Noto Sans';
 }
 
 %heading {
@@ -20,7 +23,7 @@ body {
 .heading-1 {
     @extend %heading;
     font-size: 4.5rem;
-    color: $color-grey-light-1;
+    color: var(--color-logo-text);
     line-height: 1;
 }
 
@@ -37,20 +40,28 @@ body {
 .heading-3 {
     @extend %heading;
     font-size: 1.6rem;
-    color: $color-grey-light-1;
+    color: var(--color-logo-text);
     text-transform: uppercase;
 }
 
 .heading-4 {
     @extend %heading;
     font-size: 1.9rem;
-
+    
     &--light { color: $color-grey-light-1; }
-    &--dark { color: $color-grey-dark-1; }
+    &--dark { color: $color-text-dark-1; }
+}
+
+.heading-4-icons {
+    @extend %heading;
+    font-size: 1.9rem;
+    font-family: $font-display;
+    &--light { color: $color-grey-light-1; }
+    &--dark { color: $color-text-dark-1; }
 }
 
 .btn {
-    font-family: Good Times Rg;
+    font-family: 'Noto Sans';
     background-color: $color-primary;
     color: #fff;
     border: none;
@@ -67,11 +78,11 @@ body {
 }
 
 .header__btn {
-    background-color: var(--secondary-color);
+    background-color: #b1005a;
     color: #fff;
     border: none;
     border-radius: 0;
-    font-family: Good Times Rg;
+    font-family: 'Noto Sans';
     font-size: 1.5rem;
     text-transform: uppercase;
     padding: 1.8rem 3rem;

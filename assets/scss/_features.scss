@@ -38,6 +38,39 @@
         transform: translateY(-1rem);
     }
 
+    &__icon--purple {
+        fill: #6a78d1;
+        width: 4.5rem;
+        height: 4.5rem;
+        grid-row: 1 / span 2;
+        transform: translateY(-1rem);
+    }
+
+    &__icon--orange {
+        fill: #f2545b;
+        width: 4.5rem;
+        height: 4.5rem;
+        grid-row: 1 / span 2;
+        transform: translateY(-1rem);
+    }
+
+    &__icon--green {
+        fill: #49c39e;
+        width: 4.5rem;
+        height: 4.5rem;
+        grid-row: 1 / span 2;
+        transform: translateY(-1rem);
+    }
+
+    &__icon--gold {
+        fill: #f5c26b;
+        width: 4.5rem;
+        height: 4.5rem;
+        grid-row: 1 / span 2;
+        transform: translateY(-1rem);
+    }
+
+
     &__text {
         font-size: 1.7rem;
     }
